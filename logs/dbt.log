@@ -1,0 +1,186 @@
+[0m18:40:25.193012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372B580790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372B57AA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372B57B5D0>]}
+
+
+============================== 18:40:25.197531 | 68050f75-d6f7-46a7-9133-ef3f18d4f287 ==============================
+[0m18:40:25.197531 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:40:25.198252 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\canal\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init dbt', 'log_path': 'logs'}
+[0m18:40:25.258511 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\canal\.dbt
+[0m18:40:58.926206 [debug] [MainThread]: Starter project path: C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\.venv\Lib\site-packages\dbt\include\starter_project
+[0m18:40:58.950282 [info ] [MainThread]: Setting up your profile.
+[0m18:42:38.853671 [info ] [MainThread]: Profile fraud_platform written to C:\Users\canal\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:42:38.861975 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:42:38.862479 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:42:38.863483 [info ] [MainThread]: python version: 3.11.9
+[0m18:42:38.863483 [info ] [MainThread]: python path: C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\.venv\Scripts\python.exe
+[0m18:42:38.864487 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:42:38.911768 [info ] [MainThread]: Using profiles dir at C:\Users\canal\.dbt
+[0m18:42:38.911768 [info ] [MainThread]: Using profiles.yml file at C:\Users\canal\.dbt\profiles.yml
+[0m18:42:38.911768 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\fraud_platform\dbt_project.yml
+[0m18:42:38.911768 [info ] [MainThread]: adapter type: bigquery
+[0m18:42:38.911768 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:42:39.005590 [info ] [MainThread]: Configuration:
+[0m18:42:39.005590 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:42:39.011547 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:42:39.011547 [info ] [MainThread]: Required dependencies:
+[0m18:42:39.011547 [debug] [MainThread]: Executing "git --help"
+[0m18:42:39.063380 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:42:39.064425 [debug] [MainThread]: STDERR: "b''"
+[0m18:42:39.064425 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:42:39.065430 [info ] [MainThread]: Connection:
+[0m18:42:39.065430 [info ] [MainThread]:   method: service-account
+[0m18:42:39.066435 [info ] [MainThread]:   database: fraud-platform-507716
+[0m18:42:39.066435 [info ] [MainThread]:   execution_project: fraud-platform-507716
+[0m18:42:39.067439 [info ] [MainThread]:   schema: fraud
+[0m18:42:39.067439 [info ] [MainThread]:   location: EU
+[0m18:42:39.068445 [info ] [MainThread]:   priority: interactive
+[0m18:42:39.068445 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:42:39.069418 [info ] [MainThread]:   reservation: None
+[0m18:42:39.069418 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:42:39.070515 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:42:39.070515 [info ] [MainThread]:   job_retries: 1
+[0m18:42:39.070515 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:42:39.072018 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:42:39.072018 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:42:39.073037 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:42:39.073037 [info ] [MainThread]:   client_id: None
+[0m18:42:39.073037 [info ] [MainThread]:   token_uri: None
+[0m18:42:39.074042 [info ] [MainThread]:   compute_region: None
+[0m18:42:39.074042 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:42:39.075047 [info ] [MainThread]:   gcs_bucket: None
+[0m18:42:39.075434 [info ] [MainThread]:   dataproc_batch: None
+[0m18:42:39.075971 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:42:39.796791 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:42:39.796791 [debug] [MainThread]: On debug: select 1 as id
+[0m18:42:39.796791 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:42:39.796791 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '.secrets/bigquery-key.json''
+[0m18:42:39.800300 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:42:39.800300 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: '.secrets/bigquery-key.json'
+[0m18:42:39.800300 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:42:39.801804 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:42:39.801804 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:42:39.801804 [info ] [MainThread]: Your new dbt project "fraud_platform" was created!
+Initialized new project in C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\fraud_platform\fraud_platform
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:42:39.801804 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m18:42:39.804321 [debug] [MainThread]: Command `dbt init` succeeded at 18:42:39.804321 after 134.74 seconds
+[0m18:42:39.804321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372B60E710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372B60CD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372B60E150>]}
+[0m18:42:39.804321 [debug] [MainThread]: Flushing usage events
+[0m18:42:40.571899 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:20.695876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684597B850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684597B310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684597BA10>]}
+
+
+============================== 18:46:20.699439 | 21d1b20f-2f9e-42e1-b7a5-86542ef3340a ==============================
+[0m18:46:20.699439 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:46:20.700450 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\canal\\.dbt', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m18:46:20.712662 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:46:20.712662 [info ] [MainThread]: python version: 3.11.9
+[0m18:46:20.721848 [info ] [MainThread]: python path: C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\.venv\Scripts\python.exe
+[0m18:46:20.722353 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:46:20.722833 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 7
+  ------------------------------
+  4  |       dataset: fraud
+  5  |       job_execution_timeout_seconds: 300
+  6  |       job_retries: 1
+  7  |       keyfile:       keyfile: C:/Users/canal/OneDrive/Escritorio/FEINA/PROJECTES_PORTFOLIO/realtime-fraud-platform/.secrets/bigquery_key.json
+  8  |       location: EU
+  9  |       method: service-account
+  10 |       priority: interactive
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 7, column 29
+[0m18:46:20.723848 [debug] [MainThread]: Command `dbt debug` failed at 18:46:20.723848 after 0.09 seconds
+[0m18:46:20.724852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026845983910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268459833D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026845982F50>]}
+[0m18:46:20.725637 [debug] [MainThread]: Flushing usage events
+[0m18:46:21.493820 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:54.039384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FB747A650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FB747AA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FB747BE90>]}
+
+
+============================== 18:46:54.043977 | 85cf33ce-8395-4376-ab0b-a7ad47c13da0 ==============================
+[0m18:46:54.043977 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:46:54.044979 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\canal\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m18:46:54.065057 [info ] [MainThread]: dbt version: 1.12.3
+[0m18:46:54.066061 [info ] [MainThread]: python version: 3.11.9
+[0m18:46:54.067063 [info ] [MainThread]: python path: C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\.venv\Scripts\python.exe
+[0m18:46:54.067063 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:46:55.200801 [info ] [MainThread]: Using profiles dir at C:\Users\canal\.dbt
+[0m18:46:55.201813 [info ] [MainThread]: Using profiles.yml file at C:\Users\canal\.dbt\profiles.yml
+[0m18:46:55.201813 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\dbt_project.yml
+[0m18:46:55.202820 [info ] [MainThread]: adapter type: bigquery
+[0m18:46:55.203319 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:46:55.203319 [info ] [MainThread]: Configuration:
+[0m18:46:55.203319 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:46:55.203319 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:46:55.203319 [info ] [MainThread]: Required dependencies:
+[0m18:46:55.203319 [debug] [MainThread]: Executing "git --help"
+[0m18:46:55.248344 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:46:55.248344 [debug] [MainThread]: STDERR: "b''"
+[0m18:46:55.249346 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:46:55.249346 [info ] [MainThread]: Connection:
+[0m18:46:55.249346 [info ] [MainThread]:   method: service-account
+[0m18:46:55.251314 [info ] [MainThread]:   database: fraud-platform-507716
+[0m18:46:55.251780 [info ] [MainThread]:   execution_project: fraud-platform-507716
+[0m18:46:55.251780 [info ] [MainThread]:   schema: fraud
+[0m18:46:55.251780 [info ] [MainThread]:   location: EU
+[0m18:46:55.253111 [info ] [MainThread]:   priority: interactive
+[0m18:46:55.253111 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:46:55.254182 [info ] [MainThread]:   reservation: None
+[0m18:46:55.254182 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:46:55.254182 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:46:55.255190 [info ] [MainThread]:   job_retries: 1
+[0m18:46:55.255852 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:46:55.255852 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:46:55.256919 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:46:55.256919 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:46:55.256919 [info ] [MainThread]:   client_id: None
+[0m18:46:55.258332 [info ] [MainThread]:   token_uri: None
+[0m18:46:55.259741 [info ] [MainThread]:   compute_region: None
+[0m18:46:55.260921 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:46:55.260921 [info ] [MainThread]:   gcs_bucket: None
+[0m18:46:55.262143 [info ] [MainThread]:   dataproc_batch: None
+[0m18:46:55.263153 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:46:55.962314 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:46:55.962314 [debug] [MainThread]: On debug: select 1 as id
+[0m18:46:55.963318 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:46:59.210705 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=fraud-platform-507716&j=bq:EU:5cc455f3-9391-410a-8172-ebebed8a4233&page=queryresults
+[0m18:46:59.436119 [debug] [MainThread]: SQL status: OK in 0.225 seconds
+[0m18:46:59.787895 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:46:59.788897 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:46:59.789901 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\canal\OneDrive\Escritorio\FEINA\PROJECTES_PORTFOLIO\realtime-fraud-platform\dbt_project.yml> not found
+
+[0m18:46:59.790865 [debug] [MainThread]: Command `dbt debug` failed at 18:46:59.790865 after 5.88 seconds
+[0m18:46:59.791882 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:46:59.792386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FB7502950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FD1D55950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FB73C2750>]}
+[0m18:46:59.792386 [debug] [MainThread]: Flushing usage events
+[0m18:47:00.521647 [debug] [MainThread]: An error was encountered while trying to flush usage events

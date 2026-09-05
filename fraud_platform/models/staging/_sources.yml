@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: fraud
+    database: fraud-platform-507716
+    schema: fraud
+    tables:
+      - name: raw_transactions
