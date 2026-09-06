@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "Cleaned, well-typed transactions, one row per raw record."
+    columns:
+      - name: transaction_id
+        description: "Unique identifier for each transaction."
+        tests:
+          - unique
+          - not_null
+      - name: is_fraud
+        description: "Fraud label: 0 = legit, 1 = fraud."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+                quote: false
+      - name: amount
+        tests:
+          - not_null
+      - name: transaction_ts
+        tests:
+          - not_null

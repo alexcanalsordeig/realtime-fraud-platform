@@ -1,0 +1,32 @@
+[2026-09-06T09:01:17.096+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-09-06T09:01:17.110+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_pipeline.dbt_test manual__2026-09-06T09:01:08.498898+00:00 [queued]>
+[2026-09-06T09:01:17.117+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_pipeline.dbt_test manual__2026-09-06T09:01:08.498898+00:00 [queued]>
+[2026-09-06T09:01:17.119+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-09-06T09:01:17.294+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): dbt_test> on 2026-09-06 09:01:08.498898+00:00
+[2026-09-06T09:01:17.306+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=198) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-09-06T09:01:17.307+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_pipeline', 'dbt_test', 'manual__2026-09-06T09:01:08.498898+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/fraud_pipeline.py', '--cfg-path', '/tmp/tmpgbst_zy4']
+[2026-09-06T09:01:17.308+0000] {standard_task_runner.py:72} INFO - Started process 200 to run task
+[2026-09-06T09:01:17.309+0000] {standard_task_runner.py:105} INFO - Job 10: Subtask dbt_test
+[2026-09-06T09:01:17.357+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_pipeline.dbt_test manual__2026-09-06T09:01:08.498898+00:00 [running]> on host 5d4027b3f551
+[2026-09-06T09:01:17.429+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='alex' AIRFLOW_CTX_DAG_ID='fraud_pipeline' AIRFLOW_CTX_TASK_ID='dbt_test' AIRFLOW_CTX_EXECUTION_DATE='2026-09-06T09:01:08.498898+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-06T09:01:08.498898+00:00'
+[2026-09-06T09:01:17.430+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-09-06T09:01:17.431+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-09-06T09:01:17.432+0000] {logging_mixin.py:190} INFO - Current task name:dbt_test state:running start_date:2026-09-06 09:01:17.111364+00:00
+[2026-09-06T09:01:17.432+0000] {logging_mixin.py:190} INFO - Dag name:fraud_pipeline and current dag run status:running
+[2026-09-06T09:01:17.433+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-09-06T09:01:17.434+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-09-06T09:01:17.435+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', "echo 'Step 4: running dbt data-quality tests...'"]
+[2026-09-06T09:01:17.454+0000] {subprocess.py:99} INFO - Output:
+[2026-09-06T09:01:17.455+0000] {subprocess.py:106} INFO - Step 4: running dbt data-quality tests...
+[2026-09-06T09:01:17.456+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-09-06T09:01:17.479+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-09-06T09:01:17.480+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_pipeline, task_id=dbt_test, run_id=manual__2026-09-06T09:01:08.498898+00:00, execution_date=20260906T090108, start_date=20260906T090117, end_date=20260906T090117
+[2026-09-06T09:01:17.489+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-09-06T09:01:17.490+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-09-06T09:01:17.490+0000] {logging_mixin.py:190} INFO - Dag name:fraud_pipeline queued_at:2026-09-06 09:01:08.516128+00:00
+[2026-09-06T09:01:17.491+0000] {logging_mixin.py:190} INFO - Task hostname:5d4027b3f551 operator:BashOperator
+[2026-09-06T09:01:17.524+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-09-06T09:01:17.538+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-09-06T09:01:17.541+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
