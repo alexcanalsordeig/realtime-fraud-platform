@@ -24,3 +24,11 @@ dbt/dbt_packages/
 
 .secrets/
 *.json
+
+# Airflow
+airflow/logs/
+airflow/plugins/
+airflow/config/
+
+# ML artifacts (optional - keep the model if you want it in the repo)
+# *.joblib
